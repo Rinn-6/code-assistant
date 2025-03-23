@@ -3,7 +3,7 @@ import requests
 import openai
 
 # Load environment variables
-GITHUB_TOKEN = os.getenv("TOKEN_GITHUB")  # Use the secret key you set
+GITHUB_TOKEN = os.getenv("TOKEN_GITHUB")  
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 GITHUB_REPO = os.getenv("GITHUB_REPOSITORY")
 GITHUB_REF = os.getenv("GITHUB_REF", "")
