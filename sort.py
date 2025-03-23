@@ -4,4 +4,4 @@ def bubble_sort(arr):
         for j in range(len(arr) - i - 1):
             if arr[j] > arr[j + 1]:  # Sorting condition
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
-    return arr  # What if the input is not a list?
+    return a  # What if the input is not a list?
