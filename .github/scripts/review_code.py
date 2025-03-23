@@ -2,13 +2,13 @@ import os
 import requests
 import openai
 
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+TOKEN_GITHUB = os.getenv("TOKEN_GITHUB")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 GITHUB_REPO = os.getenv("GITHUB_REPOSITORY")
 PR_NUMBER = os.getenv("GITHUB_REF").split("/")[-1]
 
 HEADERS = {
-    "Authorization": f"token {GITHUB_TOKEN}",
+    "Authorization": f"token {TOKEN_GITHUB}",
     "Accept": "application/vnd.github.v3+json",
 }
 
